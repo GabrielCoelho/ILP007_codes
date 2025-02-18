@@ -32,7 +32,12 @@ public class Cliente {
 
   public String imprimirDados() {
     String msg =
-        "Codigo: " + this.codigo + "\nNome: " + this.nome + "\nLimite: R$ " + this.limiteCredito;
+        "Codigo: "
+            + this.getCodigo()
+            + "\nNome: "
+            + this.getNome()
+            + "\nLimite: R$ "
+            + this.getLimiteCredito();
     return msg;
   }
 }
