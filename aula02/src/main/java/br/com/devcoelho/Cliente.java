@@ -5,6 +5,7 @@ public class Cliente {
   public int codigo;
   public String nome;
   public double limiteCredito;
+  public static double taxaCredito = 0.15;
 
   public int getCodigo() {
     return codigo;
