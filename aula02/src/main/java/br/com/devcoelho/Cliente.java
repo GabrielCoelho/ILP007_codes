@@ -29,4 +29,10 @@ public class Cliente {
   public void setLimiteCredito(double limiteCredito) {
     this.limiteCredito = limiteCredito;
   }
+
+  public String imprimirDados() {
+    String msg =
+        "Codigo: " + this.codigo + "\nNome: " + this.nome + "\nLimite: R$ " + this.limiteCredito;
+    return msg;
+  }
 }
