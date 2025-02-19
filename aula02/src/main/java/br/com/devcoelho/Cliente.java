@@ -38,7 +38,9 @@ public class Cliente {
             + "\nNome: "
             + this.getNome()
             + "\nLimite: R$ "
-            + this.getLimiteCredito();
+            + this.getLimiteCredito()
+            + "\nTaxa: R$ "
+            + taxaCredito * this.getLimiteCredito();
     return msg;
   }
 }
