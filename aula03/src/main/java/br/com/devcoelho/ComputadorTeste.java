@@ -26,5 +26,12 @@ public class ComputadorTeste {
 
     yourpc.calcularValor();
     yourpc.imprimir();
+
+    if (yourpc.alterarValor(100) == 1) {
+      System.out.println("Valor Alterado");
+    } else {
+      System.out.println("Valor NÃO Alterado");
+    }
+    yourpc.imprimir();
   }
 }
