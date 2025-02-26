@@ -24,6 +24,7 @@ public class ComputadorTeste {
     yourpc.setNumeroSerie(41263);
     yourpc.setPreco(10000);
 
+    yourpc.calcularValor();
     yourpc.imprimir();
   }
 }
