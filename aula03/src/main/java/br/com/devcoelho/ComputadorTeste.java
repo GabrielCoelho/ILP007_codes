@@ -12,8 +12,18 @@ public class ComputadorTeste {
     mypc.setNumeroSerie(129838);
     mypc.setPreco(1000);
 
-    //mypc.imprimir();
+    // mypc.imprimir();
     mypc.calcularValor();
     mypc.imprimir();
+
+    Computador yourpc = new Computador();
+
+    yourpc.setMarca("IBM");
+    yourpc.setModelo("Rayzen 6");
+    yourpc.setCor("Preto");
+    yourpc.setNumeroSerie(41263);
+    yourpc.setPreco(10000);
+
+    yourpc.imprimir();
   }
 }
