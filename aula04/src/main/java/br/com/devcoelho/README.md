@@ -1,4 +1,4 @@
-﻿<a name="page1"></a>**Exercício de Programação Orientada a Objetos (POO) com**
+﻿**Exercício de Programação Orientada a Objetos (POO)**
 
 **ArrayList<Conta>**
 
@@ -8,9 +8,7 @@
 
 Implementar um sistema de gerenciamento de contas bancárias utilizando **Programação Orientada a Objetos (POO)** em **Java**. O sistema deverá permitir o cadastro de múltiplas** contas, operações bancárias básicas e a listagem das contas cadastradas. Os alunos devem utilizar a classe ArrayList para armazenar as contas criadas.
 
-![ref1]![ref2]![ref3]![ref4]
-
-
+----------
 
 
 **Requisitos do Sistema**
@@ -48,16 +46,14 @@ O sistema bancário deve ser capaz de:
 
    15. O usuário poderá escolher sair do programa a qualquer momento.
 
-![ref1]![ref2]![ref3]![ref4]
-
-
+----------
 
 
 **Critérios Técnicos**
 
 - Criar uma **classe Conta** para representar as contas bancárias.
 
-- <a name="page2"></a>Utilizar **atributos privados** e métodos getters e setters para manipulação dos dados.
+- Utilizar **atributos privados** e métodos getters e setters para manipulação dos dados.
 
 - Implementar os métodos necessários para cada funcionalidade (ex.:
 
@@ -68,8 +64,3 @@ O sistema bancário deve ser capaz de:
 - Utilizar **loops e estruturas condicionais** para implementar o menu de opções no console.
 
 - A entrada de dados do usuário deve ser feita com a classe Scanner.
-
-[ref1]: Aspose.Words.0ec9be52-b483-4524-a56b-7c98561fafaf.001.png
-[ref2]: Aspose.Words.0ec9be52-b483-4524-a56b-7c98561fafaf.002.png
-[ref3]: Aspose.Words.0ec9be52-b483-4524-a56b-7c98561fafaf.003.png
-[ref4]: Aspose.Words.0ec9be52-b483-4524-a56b-7c98561fafaf.004.png
