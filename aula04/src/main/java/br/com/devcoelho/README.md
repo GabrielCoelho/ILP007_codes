@@ -64,3 +64,11 @@ O sistema bancário deve ser capaz de:
 - Utilizar **loops e estruturas condicionais** para implementar o menu de opções no console.
 
 - A entrada de dados do usuário deve ser feita com a classe Scanner.
+
+----------
+
+## Desenvolvimento 
+
+Diagrama inicial 
+
+![Imagem do Diagrama](diagrama.png)
