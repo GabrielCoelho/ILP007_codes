@@ -69,6 +69,10 @@ O sistema bancário deve ser capaz de:
 
 ## Desenvolvimento 
 
-Diagrama inicial 
+Diagrama Inicial 
 
 ![Imagem do Diagrama](diagrama.png)
+
+Caso de Uso Inicial 
+
+![Imagem do Diagrama de Caso de Uso](usecase.png)
