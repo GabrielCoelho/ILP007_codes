@@ -61,4 +61,14 @@ public class BankAccount {
     System.out.println("Client Name: " + getClientName());
     System.out.println("Amount Stored at account: $" + getCurrencyAmount());
   }
+
+  public boolean isValid() {
+    if (this.agencyName != null &&
+        this.clientName != null &&
+        this.accountNumber != 0) {
+      return true;
+    }
+    return false;
+  }
+
 }

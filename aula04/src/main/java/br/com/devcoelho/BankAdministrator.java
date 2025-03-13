@@ -50,4 +50,47 @@ public class BankAdministrator {
 
     return false;
   }
+
+  public void manageAccount() {
+    System.out.println("Please inform the number account to be managed: ");
+    int accountNumberChecked = sc.nextInt();
+    BankAccount account = new BankAccount();
+    for (BankAccount bankAccount : accountManaged) {
+      if (accountNumberChecked == bankAccount.getAccountNumber()) {
+        account = bankAccount;
+      }
+    }
+    if (account.isValid()) {
+      int option = 0;
+      do {
+        System.out.println("Account Management Screen");
+        System.out.println("1. Withdraw");
+        System.out.println("2. Deposit");
+        System.out.println("3. Show Account");
+        System.out.println("0. Exit");
+        switch (option) {
+          case 1:
+            System.out.println("Insert the amount to Withdraw: ");
+            account.withdrawValue(sc.nextDouble());
+            break;
+          case 2:
+            System.out.println("Insert the amount to Deposit: ");
+            account.depositValue(sc.nextDouble());
+            break;
+          case 3:
+            account.printInfo();
+            break;
+          case 0:
+            break;
+
+          default:
+            System.out.println("There's no such option.\nTry again");
+            break;
+        }
+      } while (option != 0);
+    } else {
+      System.out.println("Couldn't find this account.\n");
+    }
+
+  }
 }
