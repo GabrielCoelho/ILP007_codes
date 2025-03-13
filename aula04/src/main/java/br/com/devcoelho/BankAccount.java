@@ -40,7 +40,7 @@ public class BankAccount {
   }
 
   public boolean withdrawValue(double value) {
-    if (value >= 0 && value <= this.currencyAmount) {
+    if (value > 0 && value <= getCurrencyAmount()) {
       setCurrencyAmount(getCurrencyAmount() - value);
       return true;
     }
@@ -48,7 +48,7 @@ public class BankAccount {
   }
 
   public boolean depositValue(double value) {
-    if (value <= 0) {
+    if (value > 0) {
       setCurrencyAmount(getCurrencyAmount() + value);
       return true;
     }
@@ -63,12 +63,9 @@ public class BankAccount {
   }
 
   public boolean isValid() {
-    if (this.agencyName != null &&
-        this.clientName != null &&
-        this.accountNumber != 0) {
+    if (this.agencyName != null && this.clientName != null && this.accountNumber != 0) {
       return true;
     }
     return false;
   }
-
 }

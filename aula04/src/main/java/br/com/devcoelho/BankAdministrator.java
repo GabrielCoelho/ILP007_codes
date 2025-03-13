@@ -25,7 +25,7 @@ public class BankAdministrator {
       System.out.println("Inform the full name of the client: ");
       account.setClientName(sc.nextLine());
       System.out.println("Inform the account number: ");
-      account.setAccountNumber(sc.nextInt());
+      account.setAccountNumber(Integer.valueOf(sc.nextLine()));
     } catch (Exception e) {
       System.out.println("Caught an error: " + e);
       return false;
@@ -36,7 +36,7 @@ public class BankAdministrator {
 
   public boolean deleteAccount() {
     System.out.println("Inform the account to be deleted: ");
-    int accountNumberChecked = sc.nextInt();
+    int accountNumberChecked = Integer.valueOf(sc.nextLine());
     BankAccount account = new BankAccount();
     for (BankAccount bankAccount : accountManaged) {
       if (accountNumberChecked == bankAccount.getAccountNumber()) {
@@ -53,7 +53,7 @@ public class BankAdministrator {
 
   public void manageAccount() {
     System.out.println("Please inform the number account to be managed: ");
-    int accountNumberChecked = sc.nextInt();
+    int accountNumberChecked = Integer.valueOf(sc.nextLine());
     BankAccount account = new BankAccount();
     for (BankAccount bankAccount : accountManaged) {
       if (accountNumberChecked == bankAccount.getAccountNumber()) {
@@ -68,14 +68,19 @@ public class BankAdministrator {
         System.out.println("2. Deposit");
         System.out.println("3. Show Account");
         System.out.println("0. Exit");
+        option = Integer.valueOf(sc.nextLine());
         switch (option) {
           case 1:
             System.out.println("Insert the amount to Withdraw: ");
-            account.withdrawValue(sc.nextDouble());
+            if (!account.withdrawValue(Double.valueOf(sc.nextLine()))) {
+              System.out.println("Value surpasses the amount in your account.\n");
+            }
             break;
           case 2:
             System.out.println("Insert the amount to Deposit: ");
-            account.depositValue(sc.nextDouble());
+            if (!account.depositValue(Double.valueOf(sc.nextLine()))) {
+              System.out.println("We cannot deposit negative values or no value at all.\n");
+            }
             break;
           case 3:
             account.printInfo();
@@ -91,6 +96,5 @@ public class BankAdministrator {
     } else {
       System.out.println("Couldn't find this account.\n");
     }
-
   }
 }

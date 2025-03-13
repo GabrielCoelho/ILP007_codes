@@ -11,7 +11,7 @@ public class App {
     int option = 0;
     do {
       appMain.appMenu();
-      option = sc.nextInt();
+      option = Integer.valueOf(sc.nextLine());
       switch (option) {
         case 1:
           if (!manager.insertNewAccount()) {
@@ -19,7 +19,7 @@ public class App {
           }
           break;
         case 2:
-          // manager.manageAccount();
+          manager.manageAccount();
           break;
         case 3:
           if (!manager.deleteAccount()) {
